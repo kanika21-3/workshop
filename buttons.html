@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: palevioletred;
+        }
+        .container{
+            margin: 20px 30px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        table tr td{
+    
+            border: 2px solid black;
+        }
+        .innercontainer{
+            padding:30px 50px;
+            background-color: white; 
+            align-items: center;
+           
+            
+
+        }
+        .transr:hover{
+            width:20%;
+            background-color: green;
+        }
+        .button{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            border: 2px solid black;
+            background-color: lightblue;
+            position: relative;
+
+        }
+        .transr{
+            padding: 30px 30px;
+            width:100%;
+            height: auto;
+            transition: backgroound-color,width 2s;
+            display: flex;
+            justify-content: center;
+        }
+        .transitionr{
+            padding: 30px 30px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 50px;
+            background-color: green;
+            display: flex;
+           
+        }
+        .transitionl{
+            padding: 30px 30px;
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            top: 0;
+            right: 0;
+            background-color: green;
+            display: flex;
+            
+        }
+        .text{
+            display: flex;
+            border: 2px solid black;
+            visibility: visible;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+       <table>
+        <tr>
+            
+            <td>
+                <div class="innercontainer">
+                    
+                Sample 1
+                <div class="button"> 
+                    <div class="transr">
+                   <!--- <div class="transitionr"></div>
+                        <div class="transitionl"></div>
+                -->            
+                         Try Me</div>
+                       
+                </div>
+                </div>
+                
+            </td>
+            <td> <div class="innercontainer">
+                
+                Sample2
+                <div class="button"> Try Me</div>
+            </div></td>
+        </tr>
+        <tr>
+            <td><div class="innercontainer">
+                Sample3
+                <div class="button"> Try Me</div>
+            </div></td>
+            <td><div class="innercontainer">
+                Sample4
+                <div class="button"> Try Me</div>
+            </div></td>
+        </tr>
+       </table>
+    </div> 
+</body>
+</html>
